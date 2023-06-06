@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <title>How to play</title>
+</head>
+<body>
+     <!--Navigation Bar Via bootstrap-->
+     <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Pairs Game</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <div class="navbar-toggler-icon"></div>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Pairs Game</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="howto.html">How to Play</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="game.html">Play!</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+   <!--End Navigation Bar-->
+   <h1 id="rules">Rules!</h1>
+    <div id="rulesContent">
+      
+      <br><br><br><br>
+        <h2>How the game works</h2><br>
+        <p>The game starts with all the cards face down and the player takes turns to turn over two cards. If the two cards have the same picture, then the cards stay facing up, otherwise the cards face down again. The player wins when cards when all cards are matched and facing upwards.</p>
+        <br><br>
+        <h2>How to play</h2>
+        <br><br>
+        <p>To play the game, click two cards on the screen to flip them over. If they match, the cards will remain facing upright. Continue this process until you win!</p>
+        <br><br>
+        <h2>How do lives work?</h2>
+        <br>
+        <p>Lives represent remaining attempts at matching cards. Each incorrect match will result in a life being removed. When the total amount of lives reaches 0, the game board will reset and all cards positions will be randomised.</p>
+    </div>
+<!--Footer-->
+   <footer>
+    <div class = "footer-content">
+        <h3 id="footHeader">Created by Blake Germyn</h3>
+        <p>Use the links below to navigate the website or to my Github for the code used in development.</p>
+        <ul class = "footerLinks">
+          <li><a href="index.html" class="f-home">Home</a></li>
+          <li><a href="howto.html" class="f-howTo">How to play</a></li>
+          <li><a href="game.html" class="f-game">Pairs Game</a></li>
+          <li><a href="#" class="f-gitHub">Github</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

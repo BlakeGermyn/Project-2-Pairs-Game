@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: rgb(77,227,185);
+    background: linear-gradient(90deg, rgba(77,227,185,1) 0%, rgba(36,228,194,1) 27%, rgba(0,212,255,1) 100%);
+}
+ 
+ 
+ 
+.content {
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    height: 20%;
+    width: 70%;
+    border: 5px solid black;
+    text-align: center;
+    overflow: hidden;
+}
+
+#content_container_list {
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.welcome {
+    position: relative;
+    text-align: center;
+    top: 30%;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 7rem;
+    line-height: 4rem;
+    color: black;
+    
+}
+
+
+.scrolling_text {
+    display: flex;
+    justify-content: center;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 7rem;
+    color: black;
+}
+
+.scrolling_text > span {
+    position: absolute;
+    top: 0;
+    animation: slide 7s infinite;
+}
+
+@keyframes slide {
+    0% {
+      top: 0.1em;
+    }
+    25% {
+      top: -2.9em;
+    }
+    50% {
+      top: -5.9em;
+    }
+    75% {
+      top: 0.1em;
+    }
+    100% {
+      top: 0.1em;
+    }
+    
+  }
+
+  #description {
+    position: absolute;
+    top: 65vh;
+    left: 33vw;
+  }
+  
+  #indexDes {
+    font-family: calibri;
+    color: white;
+    font-size: 2em;
+  }
+  
+  #play {
+    position: absolute;
+    left: 5vw;
+    background-color: black;
+    font-size: 2em;
+    padding-right: 50px;
+    padding-left: 50px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
+  }
+
+  #play a {
+    font-family: calibri;
+    color: white;
+    text-decoration: none;
+  }
+
+  #play:hover {
+    transform: scale(110%);
+  }
+
+  #rules {
+    position: absolute;
+    left: 17vw;
+    background-color: black;
+    font-size: 2em;
+    padding-right: 50px;
+    padding-left: 50px;
+    border: none;
+    border-radius: 6px;
+  }
+
+  #rules a {
+    font-family: calibri;
+    color: white;
+    text-decoration: none;
+  }
+
+  #rules:hover {
+    transform: scale(110%);
+  }
+
+  footer {
+    position: absolute;
+    bottom: -20vh;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    background: black;
+  
+    
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.footerLinks {
+     display: flex;
+     align-items: center;
+     justify-content: center;  
+     text-decoration: none;
+     list-style-type: none;
+}
+
+
+    
+
+.footerLinks a {
+    position: relative;
+    left: -12px;
+     text-decoration: none;
+     color: #fff;
+     padding: 10px;
+     font-size: 12px;
+     margin: 0px;
+     transition: color .4s ease;
+}
+
+.footerLinks a:hover {
+   color:#fff5;
+
+}
+
+#footHeader {
+    font-family: calibri;
+    color: whitesmoke;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+p {
+    font-family: calibri;
+    color: #fff5;
+    font-size: 1rem;
+}
+
+/*Break Points*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .welcome {
+      font-size: 30px;
+    }
+
+    .scrolling_text {
+      font-size: 30px;
+    }
+    
+    @keyframes slide {
+      0% {
+        top: 1.5em;
+      }
+      25% {
+        top: -1.5em;
+      }
+      50% {
+        top: -4.5em;
+      }
+      75% {
+        top: 1.5em;
+      }
+      100% {
+        top: 1.5em;
+      }
+      
+    }
+
+    #play {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      height: 30px;
+      width: 40px;
+      left: -9vw;
+    }
+
+    #rules {
+      display: flex;
+      justify-content: center;
+      height: 30px;
+      width: 40px;
+      
+    }
+
+    #play a {
+      font-size: 0.5em;
+      padding: 3px;
+    }
+
+    #rules a {
+      font-size: 0.5em;
+      padding: 3px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: -30vh;
+    }
+
+    #footHeader {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.7rem;
+    }
+  
+}
+
+@media only screen and (min-width: 601px) {
+  .welcome {
+    font-size: 35px;
+  }
+
+  .scrolling_text {
+    font-size: 35px;
+  }
+  
+  @keyframes slide {
+    0% {
+      top: 1.1em;
+    }
+    25% {
+      top: -1.9em;
+    }
+    50% {
+      top: -4.8em;
+    }
+    75% {
+      top: 1.1em;
+    }
+    100% {
+      top: 1.1em;
+    }
+    
+  }
+  #play {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 30px;
+    width: 40px;
+    left: -8vw;
+  }
+
+  #rules {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 40px;
+    left: 20vw;
+    
+  }
+
+  #play a {
+    font-size: 0.5em;
+    padding: 3px;
+  }
+
+  #rules a {
+    font-size: 0.5em;
+    padding: 3px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: -30vh;
+  }
+
+  #footHeader {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #play {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 35px;
+    width: 60px;
+    left: -8vw;
+  }
+
+  #rules {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 60px;
+    left: 28vw;
+    
+  }
+
+  #play a {
+    font-size: 0.5em;
+    padding: 3px;
+  }
+
+  #rules a {
+    font-size: 0.5em;
+    padding: 3px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .welcome {
+    font-size: 65px;
+  }
+
+  .scrolling_text {
+    font-size: 65px;
+  }
+  
+  @keyframes slide {
+    0% {
+      top: 0.3em;
+    }
+    25% {
+      top: -2.7em;
+    }
+    50% {
+      top: -5.6em;
+    }
+    75% {
+      top: 0.3em;
+    }
+    100% {
+      top: 0.3em;
+    }
+    
+  }
+  #play {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 35px;
+    width: 60px;
+    left: -2vw;
+  }
+
+  #rules {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 60px;
+    left: 20vw;
+    
+  }
+
+  #play a {
+    font-size: 0.7em;
+    padding: 0px;
+  }
+
+  #rules a {
+    font-size: 0.7em;
+    padding: 0px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: -30vh;
+  }
+
+  #footHeader {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 1701px) {
+  #description {
+    position: absolute;
+    top: 65vh;
+    left: 33vw;
+  }
+  
+  #indexDes {
+    font-family: calibri;
+    color: white;
+    font-size: 2em;
+  }
+  
+  #play {
+    position: absolute;
+    left: 5vw;
+    background-color: black;
+    font-size: 2em;
+    padding-right: 50px;
+    padding-left: 50px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
+  }
+
+  #play a {
+    font-family: calibri;
+    color: white;
+    text-decoration: none;
+  }
+
+  #play:hover {
+    transform: scale(110%);
+  }
+
+  #rules {
+    position: absolute;
+    left: 17vw;
+    background-color: black;
+    font-size: 2em;
+    padding-right: 50px;
+    padding-left: 50px;
+    border: none;
+    border-radius: 6px;
+  }
+
+  #rules a {
+    font-family: calibri;
+    color: white;
+    text-decoration: none;
+  }
+
+  #rules:hover {
+    transform: scale(110%);
+  }
+
+  @keyframes slide {
+    0% {
+      top: 0.7em;
+    }
+    25% {
+      top: -2.3em;
+    }
+    50% {
+      top: -5.3em;
+    }
+    75% {
+      top: 0.7em;
+    }
+    100% {
+      top: 0.7em;
+    }
+    
+  }
+
+  footer {
+    position: absolute;
+    bottom: -20vh;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    background: black;
+  
+    
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.footerLinks {
+     display: flex;
+     align-items: center;
+     justify-content: center;  
+     text-decoration: none;
+     list-style-type: none;
+}
+
+
+    
+
+.footerLinks a {
+    position: relative;
+    left: -12px;
+     text-decoration: none;
+     color: #fff;
+     padding: 10px;
+     font-size: 12px;
+     margin: 0px;
+     transition: color .4s ease;
+}
+
+.footerLinks a:hover {
+   color:#fff5;
+
+}
+
+#footHeader {
+    font-family: calibri;
+    color: whitesmoke;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+p {
+    font-family: calibri;
+    color: #fff5;
+    font-size: 1rem;
+}
+}

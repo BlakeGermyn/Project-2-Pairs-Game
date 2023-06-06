@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(77,227,185);
+    background: linear-gradient(90deg, rgba(77,227,185,1) 0%, rgba(36,228,194,1) 27%, rgba(0,212,255,1) 100%);
+}
+
+
+
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 8rem);
+    grid-template-rows: repeat(4, 8rem);
+    grid-gap: 5rem;
+    perspective: 800px;
+}
+
+
+.card {
+    position: relative;
+    height: 10rem;
+    transform-style: preserve-3d;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.face,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+}
+
+.back {
+    background: whitesmoke;
+    backface-visibility: hidden;
+}
+
+.toggleCard {
+    transform: rotateY(180deg);
+}
+
+.face {
+    transform: rotateY(-180deg);
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    margin: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: -20vh;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    background: black;
+  
+    
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.footerLinks {
+     display: flex;
+     align-items: center;
+     justify-content: center;  
+     text-decoration: none;
+     list-style-type: none;
+}
+
+
+    
+
+.footerLinks a {
+    position: relative;
+    left: -12px;
+     text-decoration: none;
+     color: #fff;
+     padding: 10px;
+     font-size: 12px;
+     margin: 0px;
+     transition: color .4s ease;
+}
+
+.footerLinks a:hover {
+   color:#fff5;
+
+}
+
+#footHeader {
+    font-family: calibri;
+    color: whitesmoke;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+p {
+    font-family: calibri;
+    color: #fff5;
+    font-size: 1rem;
+}
+
+#rules {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 5rem;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#rulesContent p {
+    width: 50vw;
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+/*Break Points*/
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+     
+    section {
+        display: grid;
+        grid-template-columns: repeat(4, 4rem);
+        grid-template-rows: repeat(4, 4rem);
+        grid-gap: 1rem;
+        perspective: 800px;
+    }
+
+    footer {
+        margin: auto;
+        
+      }
+  
+      #footHeader {
+        font-size: 1.5rem;
+      }
+
+      #rules {
+        position: absolute;
+        top: 50px;
+        font-size: 3rem;
+      }
+
+      #rulesContent {
+        position: relative;
+        top: 50px;
+        left: 0;
+        height: 80vh;
+        width: 100%; 
+      }
+      #rulesContent p {
+        position: relative;
+        left: 25%;
+        top: 30px;
+        font-size: 14px;
+      }
+
+      h2 {
+        position: relative;
+        top: 25px;
+        
+      }
+
+      br {
+        display: none;
+      }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(4, 6rem);
+        grid-template-rows: repeat(4, 6rem);
+        grid-gap: 2rem;
+        perspective: 800px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: -30vh;
+      }
+  
+      #footHeader {
+        font-size: 1.5rem;
+      }
+  
+
+      #rules {
+        position: absolute;
+        top: 60px;
+        font-size: 4rem;
+      }
+
+      #rulesContent {
+        position: relative;
+        top: 50px;
+        left: 0;
+        height: 80vh;
+        width: 100%; 
+      }
+      #rulesContent p {
+        position: relative;
+        left: 25%;
+        top: 65px;
+        font-size: 14px;
+      }
+
+      h2 {
+        position: relative;
+        top: 60px;
+        
+      }
+
+      br {
+        display: none;
+      }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1700px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(4, 8rem);
+        grid-template-rows: repeat(4, 8rem);
+        grid-gap: 5rem;
+        perspective: 800px;    
+}
+
+footer {
+    position: absolute;
+    bottom: -100vh;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    background: black;
+  
+    
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.footerLinks {
+     display: flex;
+     align-items: center;
+     justify-content: center;  
+     text-decoration: none;
+     list-style-type: none;
+}
+
+
+    
+
+.footerLinks a {
+    position: relative;
+    left: -12px;
+     text-decoration: none;
+     color: #fff;
+     padding: 10px;
+     font-size: 12px;
+     margin: 0px;
+     transition: color .4s ease;
+}
+
+.footerLinks a:hover {
+   color:#fff5;
+
+}
+
+#footHeader {
+    font-family: calibri;
+    color: whitesmoke;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+p {
+    font-family: calibri;
+    color: #fff5;
+    font-size: 1rem;
+}
+
+}
+
+@media only screen and (min-width: 1900px) {
+    #rules {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 5rem;
+    }
+    
+    h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    
+    #rulesContent p {
+        width: 50vw;
+        color: black;
+        font-size: 1.2em;
+        text-align: center;
+    
+    }
+}
